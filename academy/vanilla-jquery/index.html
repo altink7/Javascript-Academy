@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript & jQuery Testing</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery UI for Sortable -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1 id="title">Interactive JavaScript Testing</h1>
+
+    <!-- Elements for DOM Manipulation and Event Handling -->
+    <button id="changeTextButton">Change Title Text</button>
+    <button id="addElementButton">Add New Paragraph</button>
+    <button id="removeElementButton">Remove Last Paragraph</button>
+    <div id="hoverArea">Hover over this area</div>
+
+    <div id="sortableList">
+        <h3>Sortable List</h3>
+        <ul>
+            <li class="draggable-item">Item 1</li>
+            <li class="draggable-item">Item 2</li>
+            <li class="draggable-item">Item 3</li>
+        </ul>
+    </div>
+
+    <div id="filterSection">
+        <h3>Filterable List</h3>
+        <input type="text" id="filterInput" placeholder="Filter items...">
+        <ul id="filterableList">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+            <li>Date</li>
+            <li>Grapes</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Link to JavaScript Files -->
+<script src="dom/dom-manipulation.js"></script>
+<script src="dom/event-handling.js"></script>
+<script src="jquery/jquery-advanced-dom.js"></script>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f5;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+
+    button {
+        display: inline-block;
+        margin: 10px 5px;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #hoverArea {
+        padding: 10px;
+        background-color: #e9ecef;
+        margin: 15px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .highlight {
+        background-color: #ffd966;
+    }
+
+    #filterableList, #sortableList ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #filterableList li, .draggable-item {
+        padding: 8px;
+        margin: 4px 0;
+        background-color: #f8f9fa;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+</style>
+
+</body>
+</html>
