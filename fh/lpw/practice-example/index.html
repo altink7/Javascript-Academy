@@ -7,7 +7,62 @@
 </head>
 <body>
 
+<form id="formular">
+    <label>
+        Vorname
+        <input type="text" id="firstName">
+    </label>
+
+    <label>
+        Nachname
+        <input type="text" id="lastName">
+    </label>
+
+    <label>
+        Telefonnummer
+        <input type="tel" id="phoneNumber">
+    </label>
+
+    <label>
+        Männlich
+        <input type="radio" name="gender" value="m">
+    </label>
+
+    <label>
+        Weiblich
+        <input type="radio" name="gender" value="w">
+    </label>
+
+    <label>
+        Divers
+        <input type="radio" name="gender" value="d">
+    </label>
+
+    <label>
+        <select id="land">
+            <option name="DE" value="DE">Deutschland</option>
+            <option name="DE" value="AT">Österreich</option>
+            <option name="DE" value="CH">Schweiz</option>
+        </select>
+    </label>
+
+    <label>
+        Ich akzeptiere die Geschäftsbedingungen
+        <input type="checkbox" id="termsAndConditions">
+    </label>
+
+    <label>
+        Einkommen
+        <input type="number" id="income">
+    </label>
+
+    <button id="submit">
+        Submit
+    </button>
+</form>
+
 <div id="errorMessage"></div>
 <div id="successMessage"></div>
+<script src="main.js"></script>
 </body>
 </html>
