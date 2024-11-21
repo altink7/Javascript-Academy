@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geschäftskonto anlegen</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<form id="businessAccountForm">
+    <label>Vorname:
+        <input type="text" id="firstName">
+    </label>
+    <br>
+    <label>Nachname:
+        <input type="text" id="lastName">
+    </label>
+    <br>
+    <label>Telefonnummer:
+        <input type="text" id="phone">
+    </label>
+    <br>
+    <div>
+        Geschlecht:
+        <label><input type="radio" name="gender" value="männlich"> Männlich</label>
+        <label><input type="radio" name="gender" value="weiblich"> Weiblich</label>
+        <label><input type="radio" name="gender" value="divers"> Divers</label>
+    </div>
+    <br>
+    <label>Land:
+        <select id="country">
+            <option value="DE">Deutschland</option>
+            <option value="AT">Österreich</option>
+            <option value="CH">Schweiz</option>
+        </select>
+    </label>
+    <br>
+    <label id="termsLabel">
+        <input type="checkbox" id="terms">
+        Ich akzeptiere die Geschäftsbedingungen von Deutschland
+    </label>
+    <br>
+    <label>Einkommen:
+        <input type="number" id="income">
+    </label>
+    <br>
+    <button type="button" id="submitButton">Absenden</button>
+    <button type="button" id="showAccountButton">Geschäftskonto anzeigen</button>
+</form>
+<div id="errorMessage"></div>
+<div id="successMessage"></div>
+<script src="main.js"></script>
+</body>
+</html>
