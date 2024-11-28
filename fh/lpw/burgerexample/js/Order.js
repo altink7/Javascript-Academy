@@ -57,13 +57,18 @@ class Order {
         }
 
         if (this.discountValue > 0) {
-            let discountValue = this.discountValue;
-            let businessRoundedValue = Math.round(discountValue * 100) / 100;
-            output += `Discount (${this.discount * 100} %) : ${businessRoundedValue} € <br>`;
+            let businessRoundedDiscountValue = this.roundToBusinessValue(this.discountValue)
+            output += `Discount (${this.discount * 100} %) : ${businessRoundedDiscountValue} € <br>`;
         }
 
-        output += `<b>Total Price: ${this.priceOrder} €</b>`;
+        let businessRoundedPriceOrder = this.roundToBusinessValue(this.priceOrder)
+        output += `<b>Total Price: ${businessRoundedPriceOrder} €</b>`;
 
         return output;
+    }
+
+    roundToBusinessValue(value) {
+        let businessRounded = Math.round(value * 100) / 100;
+        return businessRounded.toFixed(2);
     }
 }
