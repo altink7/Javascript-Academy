@@ -1,5 +1,6 @@
 class Product {
     constructor(name, price) {
+        console.log(`Adding a new Product with name: ${name} and price: ${price}`)
         this.name = name;
         this.price = price;
     }

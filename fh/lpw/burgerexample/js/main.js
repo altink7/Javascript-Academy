@@ -1,6 +1,8 @@
 function submitOrder() {
     // Start
 
+    console.log("Submitting Order");
+
     // 1: Create all Products
     let burger = new Product("Cheese Burger", 5);
     let salad = new Product("Salad", 2);
@@ -8,6 +10,7 @@ function submitOrder() {
     let beverage = new Product("Beverage", 3);
 
     // 2: Get all values
+    console.log("Get All Form Values");
     let burgerAmount = parseFloat(document.getElementById("burger").value);
     let isSalatSelected = document.getElementById("salad").checked;
     let isFriesSelected = document.getElementById("fries").checked;
@@ -37,6 +40,8 @@ function submitOrder() {
     order.calculatePrice();
     document.getElementById("receipt-output").innerHTML = order.toString();
 
+
+    console.log("Order Submission finished!")
     // Finish
 }
 

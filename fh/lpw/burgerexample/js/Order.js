@@ -9,10 +9,12 @@ class Order {
     }
 
     addProduct(product) {
+        console.log(`Adding a new Product : ${product.toString()}`)
         this.products.push(product);
     }
 
     calculatePrice() {
+        console.log("Calculating Price ...")
         this.priceOrder = 0;
         for (let i = 0; i < this.products.length; i++) {
             const product = this.products[i];
