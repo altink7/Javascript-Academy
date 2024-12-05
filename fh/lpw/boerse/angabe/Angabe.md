@@ -56,19 +56,3 @@ Gesamtsumme: EUR 1.374,30
 ```
 
 ---
-
-## Technische Anforderungen
-
-- Die Anwendung muss **objektorientiert** aufgebaut sein.
-- Folgende Klassen sind erforderlich:
-    - `Stock`: Repräsentiert eine Aktie mit Name und Preis.
-    - `Transaction`: Beinhaltet die Details einer Transaktion (Art, Menge, Gebühren, Rabatt).
-    - `StockMarket`: Beinhaltet die Logik zur Berechnung der Preise, Gebühren und Rabatte.
-- Optional: Der Benutzer kann den aktuellen Marktwert seines Portfolios anzeigen lassen.
-
----
-
-## Zusatzanforderung
-
-Erstellen Sie die Anwendung so, dass sie leicht erweiterbar ist, z. B. für die Integration von Kryptowährungen oder
-andere Anlageklassen.
