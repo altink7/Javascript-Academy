@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberangriffe Analyse</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Cyberangriffe Analyse</h1>
+    <div id="charts">
+        <div id="bar-chart-container">
+            <h2>Balkendiagramm: Angriffe nach Typ</h2>
+            <canvas id="bar-chart"></canvas>
+        </div>
+        <hr>
+
+        <div id="pie-chart-container">
+            <h2>Kreisdiagramm: Verteilung nach Schweregrad</h2>
+            <canvas id="pie-chart"></canvas>
+        </div>
+
+        <hr>
+    </div>
+    <div id="stats">
+        <h2>Top IP-Adresse</h2>
+        <p id="top-ip">Wird berechnet...</p>
+    </div>
+    <button id="reset-btn">Diagramme zurücksetzen</button>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
