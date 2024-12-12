@@ -16,6 +16,9 @@ function runApplication() {
 
     // i: App Output
     output.innerHTML = outputValue;
+
+    // i: add design
+    output.className = 'output';
 }
 
 
