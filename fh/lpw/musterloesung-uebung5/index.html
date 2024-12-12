@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hausübung 2</title>
+    <script type="text/javascript" src="js/orderCalculator.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <h1>Burger Bestellung</h1>
+
+    <section id="order">
+        <form name="order">
+            <h4>Burger</h4>
+            Wie viele Cheese Burgen wollen Sie bstellen?<br />
+            <label for="burger">
+                Cheese Burger (EUR 5,00): <input id="burger" name="burger" type="number" value="1" />
+            </label>
+            <br />
+
+            <h4>Beilage</h4>
+            Wollen Sie eine Beilage?<br />
+            <label for="salad">
+                <input id="salad" name="side-dish" type="radio" value="salad" /> Salat (EUR 2,00)
+            </label>
+            <br />
+            <label for="fries">
+                <input id="fries" name="side-dish" type="radio" value="fries" /> Pommes (EUR 3,50)
+            </label>
+
+            <h4>Getränk</h4>
+            Möchten Sie ein Getränk dazu?<br />
+            <label for="beverage">
+                <input id="beverage" name="beverage" type="checkbox" value="true" /> Getränk dazu (EUR 3,00)
+            </label>
+
+            <br /><br />
+            <b>Bei einer Bestellung von über EUR 10,00 erhalten Sie 15% Rabatt.</b>
+            <br /><br />
+
+            <button type="button" id="submit-order">Bestellung berechnen</button>
+        </form>
+    </section>
+
+    <section id="receipt">
+        <div id="receipt-output"></div>
+    </section>
+
+    <!-- damit alle HTML elemente vorhanden sind, bevor wir starten, packen wir zumindest die main datei ans Ende -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
