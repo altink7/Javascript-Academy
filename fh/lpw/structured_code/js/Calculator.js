@@ -72,8 +72,8 @@ class Calculator {
     convertToIntArray(stringArray) {
         let intArray = [];
 
-        for (let i = 0; i < this.inputNumbers.length; i++) {
-            let number = parseFloat(this.inputNumbers[i]);
+        for (let i = 0; i < stringArray.length; i++) {
+            let number = parseFloat(stringArray[i]);
 
             if (isNaN(number)) {
                 continue;
