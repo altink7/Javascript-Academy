@@ -22,7 +22,9 @@ class Calculator {
     }
 
     calculatePower() {
-        return Math.pow(this.inputNumbers[0], 2)
+        let numbers = this.convertToIntArray(this.inputNumbers);
+
+        return Math.pow(numbers[0], 2)
     }
 
     calculateMean() {
